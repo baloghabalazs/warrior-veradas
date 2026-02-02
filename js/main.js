@@ -70,9 +70,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 has_wingman: formData.get('hasWingman') ? 'yes' : 'no'
             };
 
-            // SalesAutopilot Configuration
-            const SAPI_ENDPOINT = "https://sw.salesautopilot.com/v4/subscribers/166453/signup";
-            const SAPI_KEY = "xk4hdcd222eqct4tzg5egw7kke9noja7";
+            // Use local Vercel API Proxy to avoid CORS
+            const SAPI_ENDPOINT = "/api/subscribe";
+
+            // Note: SAPI_KEY is now handled in the backend (api/subscribe.js)
+            // But checking payload...
 
             // Add form_id to payload
             payload.form_id = 327110;
@@ -81,12 +83,11 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.style.opacity = '0.7';
 
             try {
-                // Real API Request
+                // Call our Proxy
                 const response = await fetch(SAPI_ENDPOINT, {
                     method: 'POST',
                     headers: {
-                        'Content-Type': 'application/json',
-                        'ns-api-key': SAPI_KEY
+                        'Content-Type': 'application/json'
                     },
                     body: JSON.stringify(payload)
                 });
