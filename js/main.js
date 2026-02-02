@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
             };
 
             // SalesAutopilot Configuration
-            const SAPI_ENDPOINT = "https://api.salesautopilot.hu/v4/subscribers/166453/signup";
+            const SAPI_ENDPOINT = "https://sw.salesautopilot.com/v4/subscribers/166453/signup";
             const SAPI_KEY = "xk4hdcd222eqct4tzg5egw7kke9noja7";
 
             // Add form_id to payload
