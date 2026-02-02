@@ -1,0 +1,408 @@
+/* Warrior Blood Donation - Design System */
+
+:root {
+    /* Colors */
+    --color-bg: #050505;
+    --color-bg-secondary: #111111;
+    --color-text: #ffffff;
+    --color-text-muted: #a0a0a0;
+
+    --color-primary: #D90429;
+    /* Blood Red */
+    --color-primary-dark: #8D0219;
+    --color-accent: #EF233C;
+    /* Brighter Red */
+
+    --color-gold: #c5a059;
+    --color-gold-hover: #e6c278;
+
+    /* Fonts */
+    --font-heading: 'Oswald', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 8rem;
+
+    /* Effects */
+    --shadow-glow: 0 0 20px rgba(217, 4, 41, 0.4);
+    --border-radius: 4px;
+}
+
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: var(--spacing-sm);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+section {
+    padding: var(--spacing-xl) 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-sm);
+}
+
+/* Typography Utilities */
+.text-gold {
+    color: var(--color-gold);
+}
+
+.text-red {
+    color: var(--color-primary);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: transparent;
+    color: var(--color-text);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: white;
+    box-shadow: var(--shadow-glow);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-dark);
+    border-color: var(--color-primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 0 30px rgba(217, 4, 41, 0.6);
+}
+
+.btn-outline {
+    border-color: var(--color-gold);
+    color: var(--color-gold);
+}
+
+.btn-outline:hover {
+    background-color: var(--color-gold);
+    color: black;
+    box-shadow: 0 0 20px rgba(197, 160, 89, 0.4);
+}
+
+/* Impact Meter - Warrior Hatás */
+.impact-meter {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../assets/blood-texture.png');
+    background-size: cover;
+    padding: var(--spacing-lg) 0;
+    text-align: center;
+    border-top: 2px solid var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+}
+
+.counter-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    flex-wrap: wrap;
+    margin-top: var(--spacing-md);
+}
+
+.counter-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: var(--spacing-md);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    min-width: 250px;
+}
+
+.counter-number {
+    font-family: var(--font-heading);
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    display: block;
+}
+
+.counter-label {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-text-muted);
+}
+
+/* 4 Pillars - Zoom Series */
+.pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.pillar-card {
+    background: var(--color-bg-secondary);
+    padding: var(--spacing-md);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.pillar-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--color-gold);
+}
+
+.pillar-icon {
+    font-size: 3rem;
+    color: var(--color-gold);
+    margin-bottom: var(--spacing-sm);
+}
+
+.pillar-title {
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* Testimonials */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.testimonial-card {
+    background: #0d0d0d;
+    padding: var(--spacing-md);
+    border-left: 3px solid var(--color-primary);
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateX(5px);
+    background: #111;
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.testimonial-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--color-gold);
+}
+
+.testimonial-info h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.testimonial-info span {
+    font-size: 0.9rem;
+    color: var(--color-gold);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.testimonial-quote {
+    font-style: italic;
+    color: #ccc;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.quote-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.05);
+}
+
+/* Registration Form */
+.registration-section {
+    background: var(--color-bg-secondary);
+}
+
+.form-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #000;
+    padding: var(--spacing-lg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.form-group {
+    margin-bottom: var(--spacing-md);
+}
+
+label {
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    font-family: var(--font-heading);
+    letter-spacing: 1px;
+    color: var(--color-text-muted);
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 1rem;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    color: white;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.checkbox-group input {
+    width: auto;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('../assets/warrior-hero.png');
+    background-size: cover;
+    background-position: center;
+    padding: 0 var(--spacing-sm);
+}
+
+.hero-content {
+    max-width: 800px;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 8vw, 6rem);
+    line-height: 1;
+    margin-bottom: var(--spacing-md);
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-lg);
+    color: #ddd;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    padding: var(--spacing-lg) 0;
+    border-top: 1px solid #222;
+    text-align: center;
+}
+
+/* Animations */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(217, 4, 41, 0.4);
+    }
+
+    70% {
+        box-shadow: 0 0 0 20px rgba(217, 4, 41, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(217, 4, 41, 0);
+    }
+}
+
+.pulse-anim {
+    animation: pulse 2s infinite;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    :root {
+        --spacing-lg: 3rem;
+        --spacing-xl: 5rem;
+    }
+
+    .counter-item {
+        min-width: 100%;
+    }
+}

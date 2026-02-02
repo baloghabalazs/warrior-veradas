@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warrior Véradás - A véred életet ment</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- FontAwesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation (Simple) -->
+    <nav
+        style="position: absolute; top: 0; left: 0; width: 100%; padding: 20px; z-index: 100; display: flex; justify-content: space-between; align-items: center;">
+        <div class="logo" style="font-family: 'Oswald'; font-size: 24px; font-weight: bold; color: white;">Warrior<span
+                class="text-red">Tribe</span></div>
+        <a href="#register" class="btn btn-primary" style="padding: 10px 20px; font-size: 1rem;">Csatlakozom</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <!-- Video Background would go here, using a placeholder div for now opacity overlay included in CSS -->
+        <div class="hero-content">
+            <h4 class="text-gold uppercase" style="letter-spacing: 4px; margin-bottom: 20px;">Országos Warrior Véradás
+            </h4>
+            <h1>A Harcos Vér <br><span class="text-red">Életet Ment</span></h1>
+            <p>Csatlakozz a Warrior Tribe legnagyobb karitatív akciójához. <br>30 nap. 5 Nagyváros. 1500 megmentett
+                élet.</p>
+            <div style="margin-top: 40px;">
+                <a href="#register" class="btn btn-primary pulse-anim">Regisztrálok</a>
+                <a href="#details" class="btn btn-outline" style="margin-left: 20px;">Részletek</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Meter Section -->
+    <section class="impact-meter" id="impact">
+        <div class="container">
+            <h2 class="text-gold">The Impact Meter</h2>
+            <p style="color: #aaa; max-width: 600px; margin: 0 auto;">Nem csak egy statisztika. Ez a mi közös
+                haditervünk a halál ellen.</p>
+
+            <div class="counter-wrapper">
+                <div class="counter-item">
+                    <span class="counter-number" data-target="450">0</span>
+                    <span class="counter-label">Egység Vér</span>
+                </div>
+                <div class="counter-item">
+                    <span class="counter-number text-red" data-target="1350">0</span>
+                    <span class="counter-label">Megmentett Élet</span>
+                </div>
+                <div class="counter-item">
+                    <span class="counter-number text-gold" data-target="12">0</span>
+                    <span class="counter-label">Város & Helyszín</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Vision Section -->
+    <section id="details">
+        <div class="container">
+            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 4rem;">
+                <div style="flex: 1; min-width: 300px;">
+                    <h2 class="text-gold">A Vízió: Felelősség</h2>
+                    <h3 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Nem csak magunkért <br>vagyunk erősek.</h3>
+                    <p style="color: #ccc; margin-bottom: 1.5rem;">
+                        A Warrior célja nem csak az egyéni kiválóság, hanem a társadalmi felelősségvállalás. Ezen a
+                        hónapon megmutatjuk, hogy az erőnk másokat szolgál.
+                    </p>
+                    <p style="color: #ccc;">
+                        <strong>Nyitó Esemény (Kick-off):</strong> Egy közös felvonulás Budapesten és 4 másik
+                        nagyvárosban. Warrior pólóban, egységesen. <br>
+                        <strong>30 Napos Kihívás:</strong> Ha nem érsz rá a nyitónapon, a hónap bármelyik napján adhatsz
+                        vért. A hatás ugyanaz.
+                    </p>
+                </div>
+                <div
+                    style="flex: 1; min-width: 300px; background: #222; height: 400px; display: flex; align-items: center; justify-content: center; border: 1px solid #333;">
+                    <p style="color: #555;">[Kép helye: Warriorok sorban állnak véradásra]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4 Pillars Section -->
+    <section id="pillars" style="background: var(--color-bg-secondary);">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="text-red">4 Pillér Zoom Sorozat</h2>
+                <p style="color: #aaa;">Exkluzív online estek a kampány alatt</p>
+            </div>
+
+            <div class="pillars-grid">
+                <!-- Pillar 1 -->
+                <div class="pillar-card">
+                    <div class="pillar-icon"><i class="fas fa-dumbbell"></i></div>
+                    <h3 class="pillar-title">TEST</h3>
+                    <p class="text-gold">1. Hét</p>
+                    <p style="font-size: 0.9rem; color: #aaa; margin-top: 10px;">Az életerő és a fizikai felelősség.</p>
+                </div>
+                <!-- Pillar 2 -->
+                <div class="pillar-card">
+                    <div class="pillar-icon"><i class="fas fa-heart"></i></div>
+                    <h3 class="pillar-title">LÉLEK</h3>
+                    <p class="text-gold">2. Hét</p>
+                    <p style="font-size: 0.9rem; color: #aaa; margin-top: 10px;">Belső stabilitás és áldozatvállalás.
+                    </p>
+                </div>
+                <!-- Pillar 3 -->
+                <div class="pillar-card">
+                    <div class="pillar-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3 class="pillar-title">ÜZLET</h3>
+                    <p class="text-gold">3. Hét</p>
+                    <p style="font-size: 0.9rem; color: #aaa; margin-top: 10px;">Vezetői példamutatás a civil életben.
+                    </p>
+                </div>
+                <!-- Pillar 4 -->
+                <div class="pillar-card">
+                    <div class="pillar-icon"><i class="fas fa-users"></i></div>
+                    <h3 class="pillar-title">CSALÁD</h3>
+                    <p class="text-gold">4. Hét</p>
+                    <p style="font-size: 0.9rem; color: #aaa; margin-top: 10px;">Gondoskodás és a kőszikla szerep.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="text-gold">Warrior Vélemények</h2>
+                <p style="color: #aaa;">Akik már meghozták a döntést.</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-right quote-icon"></i>
+                    <div class="testimonial-header">
+                        <img src="assets/avatar-1.png" alt="Warrior 1" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4>Kovács Áron</h4>
+                            <span>Warrior Tag, 3 éve</span>
+                        </div>
+                    </div>
+                    <p class="testimonial-quote">"Az üzleti életben naponta hozok döntéseket, de ez más. Itt nem a
+                        profitot méred, hanem az emberi életeket. Kötelességem visszaadni abból az erőből, amit kaptam."
+                    </p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-right quote-icon"></i>
+                    <div class="testimonial-header">
+                        <img src="assets/avatar-2.png" alt="Warrior 2" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4>Molnár Zsolt</h4>
+                            <span>Családapa, Vállalkozó</span>
+                        </div>
+                    </div>
+                    <p class="testimonial-quote">"A gyerekeimnek nem azt akarom megtanítani, hogy mit mondjanak, hanem
+                        hogy mit tegyenek. Amikor vért adok, ők látják, hogy apa nemcsak erős, hanem gondoskodik is."
+                    </p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-right quote-icon"></i>
+                    <div class="testimonial-header">
+                        <img src="assets/avatar-3.png" alt="Warrior 3" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4>Barna Gergő</h4>
+                            <span>Új Tag</span>
+                        </div>
+                    </div>
+                    <p class="testimonial-quote">"Sokáig kerestem a helyem. Azt hittem, a Warrior Tribe csak az edzésről
+                        szól. De a 'Vérszerződés' megmutatta, hogy ez egy igazi testvériség. Itt számítasz."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extra: Blood Bond -->
+    <section>
+        <div class="container text-center">
+            <div
+                style="background: linear-gradient(45deg, #1a0000, #330000); padding: 3rem; border: 1px solid var(--color-primary);">
+                <h2 class="text-gold">Warrior Vérszerződés</h2>
+                <p style="font-size: 1.2rem; color: #ddd; max-width: 700px; margin: 0 auto 2rem auto;">
+                    Hozz egy "szárnysegédet" (külsős barátot) és köss vele szövetséget! Vállald, hogy 30 napig
+                    mentorálod őt egy választott életterületen.
+                </p>
+                <div
+                    style="display: inline-block; padding: 10px 20px; border: 1px dashed var(--color-gold); color: var(--color-gold);">
+                    <i class="fas fa-handshake"></i> "Nem csak vért adunk. Jövőt építünk."
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="registration-section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 3rem;">
+                <h2 class="text-gold">Regisztráció</h2>
+                <p>Jelentkezz a kampányra, és légy része a mozgalomnak.</p>
+            </div>
+
+            <div class="form-container">
+                <form id="registrationForm">
+                    <div class="form-group">
+                        <label>Teljes Név</label>
+                        <input type="text" name="fullName" placeholder="Pl. Kovács Harcos" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>E-mail Cím</label>
+                        <input type="email" name="email" placeholder="email@cimem.hu" required>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div class="form-group">
+                            <label>Helyszín / Város</label>
+                            <select name="city">
+                                <option>Budapest</option>
+                                <option>Debrecen</option>
+                                <option>Győr</option>
+                                <option>Szeged</option>
+                                <option>Pécs</option>
+                                <option>Egyéni (Más helyszín)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Részvétel Típusa</label>
+                            <select name="type">
+                                <option>Warrior Tag</option>
+                                <option>Külsős (Vendég)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-group">
+                            <input type="checkbox" name="hasWingman">
+                            <span>Hozok magammal Szárnysegédet (Vendéget)</span>
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-group">
+                            <input type="checkbox" name="privacyAccepted" required>
+                            <span>Elfogadom az adatkezelési nyilatkozatot és vállalom a részvételt.</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Jelentkezem</button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <h3 style="color: white; font-family: 'Oswald';">Warrior Tribe</h3>
+            <p style="color: #555; font-size: 0.9rem;">Minden jog fenntartva &copy; 2026</p>
+            <div style="margin-top: 20px;">
+                <a href="#" style="color: #777; margin: 0 10px;"><i class="fab fa-facebook"></i></a>
+                <a href="#" style="color: #777; margin: 0 10px;"><i class="fab fa-instagram"></i></a>
+                <a href="#" style="color: #777; margin: 0 10px;"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
